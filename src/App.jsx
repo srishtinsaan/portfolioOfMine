@@ -1,0 +1,96 @@
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+
+import Loader from './components/Loader';
+import ScrollProgress from './components/ScrollProgress';
+import Container from "./components/Container";
+import Footer from "./components/Footer";
+import About from './components/About';
+import Projects from './components/Projects';
+import Contacts from './components/Contacts';
+import Tools from './components/Tools';
+import Resume from './components/Resume';
+import PageUpButton from './components/PageUpButton';
+
+
+const PageWrapper = ({children}) => (
+  <motion.div
+    initial={{ opacity: 0, x: 40 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -40 }}
+    transition={{ duration: 0.2, ease: 'easeInOut' }}
+    className="w-full">
+    {children}
+  </motion.div>
+);
+
+const AppRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait" initial={false}>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Container />}>
+          <Route index element={<Navigate to="about" replace />} />
+          <Route path="about" element={<PageWrapper><About /></PageWrapper>} />
+          <Route path="projects" element={<PageWrapper><Projects /></PageWrapper>} />
+          <Route path="contacts" element={<PageWrapper><Contacts /></PageWrapper>} />
+          <Route path="tools" element={<PageWrapper><Tools /></PageWrapper>} />
+          <Route path="resume" element={<PageWrapper><Resume /></PageWrapper>} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
+};
+
+const App = () => {
+
+  const calculateheight = ScrollProgress();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
+
+    return () => clearTimeout(timer);
+  },[])
+ 
+
+  
+
+  
+
+  return (
+    <>
+      {/* Scroll Progress Bar */}
+      <span style={{ width: `${calculateheight}%` }} className="fixed top-0 left-0 h-[2px] bg-white z-50 shadow-[0_0_15px_rgba(255,255,255,0.5)] transition-all ease-linear"/>
+
+      <BrowserRouter>
+        <AnimatePresence mode="wait">
+          {isLoading ? (
+            <motion.div key="Loader" initial={{ opacity: 1 }}
+            exit={{ opacity: 0}}
+            transition={{ duration: 2}}
+            className='w-full h-screen flex items-center justify-center'>
+              <Loader />
+            </motion.div>
+          ) : (<motion.div key="main"
+            initial={{ opacity: 0, }}
+            animate={{ opacity: 1, }}
+            transition={{ duration:0.4}}
+            className="w-full min-h-screen text-white flex flex-col items-center gap-20"
+          >
+            <AppRoutes />
+            <PageUpButton/>
+            <Footer />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </BrowserRouter>
+    </>
+  );
+};
+
+export default App;

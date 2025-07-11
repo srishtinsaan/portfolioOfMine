@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+html, body{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: black;
+}
+
+.MarqueeGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgb(0,0,0,1) 20%,
+    rgba(0,0,0,1) 90%,
+    rgba(0,0,0,0)
+  );
+}
+
+::selection {
+  background: #ffffff; /* or any color you want */
+  color: #000000; /* optional: text color during selection */
+}
+
+.react-calendar-heatmap .month-label {
+  font-size: 1px; 
+}
+
+.color-empty {
+  fill: #2c62b4;
+}
+.color-github-1 {
+  fill: #9be9a8;
+}
+.color-github-2 {
+  fill: #40c463;
+}
+.color-github-3 {
+  fill: #30a14e;
+}
+.color-github-4 {
+  fill: #216e39;
+}
+
+.react-calendar-heatmap rect {
+  stroke: #000000;
+  stroke-width: 0.5;
+}
+
+
+
