@@ -6,8 +6,8 @@ import ContainerBody from './ContainerBody'
 function Container() {
   
   return (
-    <div>
-      <div className="w-3xl border border-white min-h-[500px] text-white shadow-[0_10px_20px_rgba(255,255,255,0.4)]  mt-20">
+    <div className="w-full overflow-x-hidden">
+      <div className="w-full max-w-3xl mx-auto border border-white min-h-[500px] text-white shadow-[0_10px_20px_rgba(255,255,255,0.4)] mt-20">
         <Profile/>
         <Menu/>
         <ContainerBody/>

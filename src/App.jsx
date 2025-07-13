@@ -65,7 +65,8 @@ const App = () => {
   return (
     <>
       {/* Scroll Progress Bar */}
-      <span style={{ width: `${calculateheight}%` }} className="fixed top-0 left-0 h-[2px] bg-white z-50 shadow-[0_0_15px_rgba(255,255,255,0.5)] transition-all ease-linear"/>
+      <span style={{ width: `${calculateheight}%` }} 
+      className="fixed top-0 left-0 h-[2px] sm:h-[3px] md:h-[2px] w-full bg-white z-[9999] shadow-[0_0_10px_rgba(255,255,255,0.6)] transition-all ease-linear pointer-events-none"/>
 
       <BrowserRouter>
         <AnimatePresence mode="wait">
@@ -80,7 +81,7 @@ const App = () => {
             initial={{ opacity: 0, }}
             animate={{ opacity: 1, }}
             transition={{ duration:0.4}}
-            className="w-full min-h-screen text-white flex flex-col items-center gap-20"
+            className="w-full min-h-screen text-white flex flex-col items-center gap-20 px-4 sm:px-8 lg:px-16"
           >
             <AppRoutes />
             <PageUpButton/>

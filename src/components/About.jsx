@@ -24,7 +24,7 @@ function About() {
 
   
   return (
-    <div className="w-full h-full relative p-12">
+    <div className="w-full h-full relative">
 
       <div>
         I'm a Computer Science undergrad and a developer who genuinely enjoys building things and love to solve real problems. 
