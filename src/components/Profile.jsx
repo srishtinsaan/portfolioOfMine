@@ -12,7 +12,7 @@ function Profile() {
         {/* https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=1213&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
         {/* https://images.unsplash.com/photo-1591302418462-eb55463b49d6?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
         {/* https://images.unsplash.com/photo-1578902676466-5b361386e858?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
-      <div className="w-full h-[160px] border-b border-white overflow-hidden relative flex items-center justify-center">
+      <div className="w-full h-[120px] lg:h-[160px] border-b-[0.5px] lg:border-b-1 overflow-hidden relative flex items-center justify-center">
         <LeetcodeHeatmap username="srishtinsaan"/>
       </div>
 
@@ -22,7 +22,7 @@ function Profile() {
         sm:w-32 sm:h-32 
         md:w-32 md:h-32 
         lg:w-34 lg:h-34 
-        rounded-full absolute border-1 border-white 
+        rounded-full border-[1px] border-white absolute 
         mx-4 -my-12 
         sm:mx-6 sm:mb-5 
         md:mx-6  md:-my-16 
@@ -31,7 +31,7 @@ function Profile() {
         </div>
 
         {/* heading */}
-      <div className='w-full border-b-1 border-white 
+      <div className='w-full border-b-[0.5px] lg:border-b-1
       mt-16 
       md:mt-20 
       sm:mt-22 

@@ -65,8 +65,8 @@ const App = () => {
   return (
     <>
       {/* Scroll Progress Bar */}
-      <span style={{ width: `${calculateheight}%` }} 
-      className="fixed top-0 left-0 h-[2px] sm:h-[3px] md:h-[2px] w-full bg-white z-[9999] shadow-[0_0_10px_rgba(255,255,255,0.6)] transition-all ease-linear pointer-events-none"/>
+      <span style={{ width: `${calculateheight}%` , transition: 'widthlinear'}} 
+      className="fixed top-0 left-0 h-[2px] sm:h-[3px] md:h-[2px] w-full bg-white z-[9999] shadow-[0_0_10px_rgba(255,255,255,0.6)] pointer-events-none"/>
 
       <BrowserRouter>
         <AnimatePresence mode="wait">
