@@ -19,7 +19,7 @@ function Menu() {
   return (
     // lg:border-b-1 border-b-[0.5px] 
     <div
-      className="w-full h-12 px-2 flex items-center overflow-x-auto whitespace-nowrap
+      className="w-full h-12 px-2 flex items-center overflow-x-auto overflow-y-hidden whitespace-nowrap
         lg:place-content-around md:place-content-around sm:place-content-around scrollbar-hide
         bg-white/10 backdrop-blur relative"
       onMouseMove={handleMouseMove}
