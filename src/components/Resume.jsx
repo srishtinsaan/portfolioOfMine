@@ -2,11 +2,12 @@ import React from 'react'
 
 function Resume() {
   return (
-     <div className='mx-12'>
+     <div className=''>
 
       {/* Experience */}
-      <div className='w-full min-h-[80px] mt-10 '>
-        <h1 className='text-2xl mb-5 font-semibold'>Experience</h1>
+      <div className='w-full min-h-[80px]  '>
+        <h1 className='text-2xl  
+        lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Experience</h1>
 
       <div className='w-full min-h-[50px] '>
         <div className='flex place-content-between'>
@@ -24,7 +25,8 @@ function Resume() {
       
       {/* Education */}
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl mb-5 font-semibold'>Education</h1>
+        <h1 className='text-2xl  
+        lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5  font-semibold'>Education</h1>
       
      
      {/* college */}
@@ -56,7 +58,8 @@ function Resume() {
 
       {/* Achievements */}
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl mb-5 font-semibold'>Achievements</h1>
+        <h1 className='text-2xl
+        lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Achievements</h1>
         <div className=''>
           <ul className='list-disc pl-5'>
             <li>Global Nominee at NASA Space Apps Challenge 2024</li>
@@ -68,7 +71,8 @@ function Resume() {
 
       {/* Co-Curricular Activities */}
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl mb-5 font-semibold'>Co-Curricular Activities</h1>
+        <h1 className='text-2xl
+        lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Co-Curricular Activities</h1>
 
         {/* IAESTE */}
         <div className='flex place-content-between'>
@@ -92,13 +96,7 @@ function Resume() {
         </div>
         <h3 className='text-gray-300 text-sm mb-5'>JECRC University</h3>
       </div>
-
-
-      <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl mb-5 font-semibold'>Co-Curricular Activities</h1>
-      </div>
          
-    
     </div>
   )
 }

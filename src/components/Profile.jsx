@@ -1,5 +1,4 @@
 import myImage from '../assets/images/Srishti.png'
-import LeetcodeHeatmap from './LeetcodeHeatmap';
 
 function Profile() {
 
@@ -12,9 +11,10 @@ function Profile() {
         {/* https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?q=80&w=1213&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
         {/* https://images.unsplash.com/photo-1591302418462-eb55463b49d6?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
         {/* https://images.unsplash.com/photo-1578902676466-5b361386e858?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
-      <div className="w-full h-[120px] lg:h-[160px] border-b-[0.5px] lg:border-b-1 overflow-hidden relative flex items-center justify-center">
-        <LeetcodeHeatmap username="srishtinsaan"/>
+      <div className="w-full h-[120px] lg:h-[160px] overflow-hidden relative flex items-center justify-center">
+        <img src="https://cdn.pfps.gg/banners/4171-black-and-white-aesthetic.png" className='w-full h-full object-cover' alt="" />
       </div>
+      {/* border-b-[0.5px] lg:border-b-1  */}
 
 
       {/*profile image */}
@@ -22,20 +22,21 @@ function Profile() {
         sm:w-32 sm:h-32 
         md:w-32 md:h-32 
         lg:w-34 lg:h-34 
-        rounded-full border-[1px] border-white absolute 
+        rounded-full 
         mx-4 -my-12 
         sm:mx-6 sm:mb-5 
         md:mx-6  md:-my-16 
-        lg:mx-10 overflow-hidden shadow-[0_7px_10px_rgba(255,255,255,0.4)] ">
+        lg:mx-10 overflow-hidden shadow-[0_5px_10px_rgba(255,255,255,0.4)] ">
             <img className="w-full bg-black object-cover object-top scale-110 translate-y-2" src={myImage} draggable="false"/>
         </div>
 
         {/* heading */}
-      <div className='w-full border-b-[0.5px] lg:border-b-1
+      <div className='w-full 
       mt-16 
       md:mt-20 
       sm:mt-22 
       lg:mt-22 pl-4'>
+        {/* border-b-[0.5px] */}
         <h1 className="text-2xl sm:text-3xl lg:text-4xl  
         lg:mb-8 md:mb-6 sm:mb-4 mb-3
         lg:ml-7 md:ml-3 sm:ml-2  ml-2 

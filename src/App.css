@@ -17,35 +17,11 @@ body{
   );
 }
 
-::selection {
-  background: #ffffff; /* or any color you want */
-  color: #000000; /* optional: text color during selection */
-}
 
-.react-calendar-heatmap .month-label {
-  font-size: 1px; 
-}
 
-.color-empty {
-  fill: #2c62b4;
-}
-.color-github-1 {
-  fill: #9be9a8;
-}
-.color-github-2 {
-  fill: #40c463;
-}
-.color-github-3 {
-  fill: #30a14e;
-}
-.color-github-4 {
-  fill: #216e39;
-}
 
-.react-calendar-heatmap rect {
-  stroke: #000000;
-  stroke-width: 0.5;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
-
 
 
