@@ -6,7 +6,7 @@ function Resume() {
 
       {/* Experience */}
       <div className='w-full min-h-[80px]'>
-        <h1 className='text-2xl  
+        <h1 className='text-xl sm:text-2xl lg:text-2xl  
         lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Experience</h1>
 
       <div className="w-full min-h-[50px] space-y-1">
@@ -32,7 +32,7 @@ function Resume() {
       
       {/* Education */}
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl  
+        <h1 className='text-xl sm:text-2xl lg:text-2xl   
         lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Education</h1>
 
       <div className="w-full min-h-[50px] space-y-1">
@@ -77,7 +77,7 @@ function Resume() {
 
       {/* Achievements */}
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl
+        <h1 className='text-xl sm:text-2xl lg:text-2xl 
         lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Achievements</h1>
         <div className='text-sm'>
           <ul className='list-disc pl-5'>
@@ -91,7 +91,7 @@ function Resume() {
       {/* Co-Curricular Activities */}
 
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl  
+        <h1 className='text-xl sm:text-2xl lg:text-2xl 
         lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Co-Curricular Activities</h1>
 
 

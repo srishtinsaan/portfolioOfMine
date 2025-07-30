@@ -97,7 +97,7 @@ function About() {
       
       <div>
         <p>
-          Alongside development, I’m actively practicing Data Structures and Algorithms, having solved 200+ problems across platforms like LeetCode and GFG. It helps me think sharper and write more efficient code.
+          Alongside development, I'm actively practicing Data Structures and Algorithms, having solved 200+ problems across platforms like LeetCode and GFG. It helps me think sharper and write more efficient code.
         <a className="ml-2 hover:text-blue-400 text-blue-300" href="https://codolio.com/profile/srishtinsaan" target="_blank" rel="noopener noreferrer">Checkout here.</a>
         <br /><br />
         I bring solid dedication, clean code, and deep focus to the table.

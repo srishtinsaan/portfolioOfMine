@@ -8,7 +8,7 @@ function Tools() {
     { name: "React", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "Tailwind", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"},
     { name: "Redux", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-    { name: "Framer", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg" },
+    { name: "Framer", image: "https://img.icons8.com/?size=100&id=L2hKYZI79drI&format=png&color=000000" },
     { name: "Figma", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
     { name: "Vite.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"},
   ]
@@ -26,7 +26,7 @@ function Tools() {
 
       {/* frontend */}
       <div className='w-full min-h-[80px] '>
-        <h1 className='text-2xl font-semibold mb-5'>Frontend</h1>
+        <h1 className='text-xl sm:text-2xl lg:text-2xl  font-semibold mb-5'>Frontend</h1>
 
         {/* fronted divs */}
           <div className="whitespace-wrap mb-6 m-0">
@@ -47,7 +47,7 @@ function Tools() {
 
       {/* backend */}
       <div className='w-full min-h-[80px] '>
-        <h1 className='text-2xl font-semibold mb-5'>Backend</h1>
+        <h1 className='text-xl sm:text-2xl lg:text-2xl font-semibold mb-5'>Backend</h1>
 
         {/* fronted divs */}
           <div className="whitespace-wrap mb-6 m-0">

@@ -11,7 +11,7 @@ function Contacts() {
   return (
     <div className=''>
       <div className='w-full min-h-[80px] mb-10'>
-        <h1 className='text-2xl font-semibold'>Socials</h1>
+        <h1 className='text-xl sm:text-2xl lg:text-2xl  font-semibold'>Socials</h1>
         <br />
         <div className='flex gap-7'>
         {socials_link.map((items, index) => (
@@ -26,7 +26,7 @@ function Contacts() {
       </div>
       <hr />
       <div className='w-full min-h-[80px] my-10'>
-        <h1 className='text-2xl font-semibold'>Email</h1>
+        <h1 className='text-xl sm:text-2xl lg:text-2xl  font-semibold'>Email</h1>
         <br />
         <h3>srish17816@gmail.com</h3>
       </div>
