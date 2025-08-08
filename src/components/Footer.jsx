@@ -15,7 +15,7 @@ function Footer() {
   const time = now.toLocaleTimeString("en-US", {hour : 'numeric', minute: '2-digit', second: '2-digit', hour12 : true})
   return (
     <div className='w-full sm:w-auto text-center px-4'>
-      <div className='text-gray-500 mb-50 sm:w-auto sm:text-base'>
+      <div className='text-sm  text-gray-500 mb-10 mt-20 sm:w-auto sm:text-base'>
          Jaipur, IND • {today_date} {time}
       </div>
     </div>

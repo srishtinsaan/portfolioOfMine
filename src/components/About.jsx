@@ -39,60 +39,50 @@ function About() {
 
 
       {/* Marquee Strips*/}
-      {/* - Up*/}
-      <div className="overflow-hidden whitespace-nowrap w-full mb-6 flex MarqueeGradient">
-        <motion.div
-          className="flex gap-2  flex-shrink-0 "
-          initial={{ x: "0%" }} animate = {{x : "-100%"}} transition={{ repeat: Infinity, duration: 25, ease: "linear",}}>
-          {marqueeData.map((items, index) => (
+      {/* Top Marquee */}
+<div className="overflow-hidden whitespace-nowrap w-full mb-6 flex MarqueeGradient">
+  <div className="marquee-left">
+    {marqueeData.map((items, index) => (
             <div key={index} className="inline-flex rounded-md p-2 items-center gap-2 mr-3">
               <div className="w-6 h-6 rounded-md">
                 <img src={items.image} alt="" />
               </div>
               <h4>{items.name}</h4>
             </div>
-          ))}
-        </motion.div>
-        <motion.div
-          className="flex gap-2 flex-shrink-0 "
-          initial={{ x: "0%" }} animate = {{x : "-100%"}} transition={{ repeat: Infinity, duration: 25, ease: "linear",}}>
-          {marqueeData.map((items, index) => (
+          ))} {/* Original */}
+    {marqueeData.map((items, index) => (
             <div key={index} className="inline-flex rounded-md p-2 items-center gap-2 mr-3">
               <div className="w-6 h-6 rounded-md">
                 <img src={items.image} alt="" />
               </div>
               <h4>{items.name}</h4>
             </div>
-          ))}
-        </motion.div>
-      </div>
-      {/* - Down*/}
-      <div className="overflow-hidden whitespace-nowrap w-full mb-6 flex MarqueeGradient">
-        <motion.div
-          className="flex gap-2  flex-shrink-0 "
-          initial={{ x: "-100%" }} animate = {{x : "0%"}} transition={{ repeat: Infinity, duration: 25, ease: "linear",}}>
-          {marqueeData.slice().reverse().map((items, index) => (
+          ))} {/* Duplicate */}
+  </div>
+</div>
+
+{/* Bottom Marquee */}
+<div className="overflow-hidden whitespace-nowrap w-full mb-6 flex MarqueeGradient">
+  <div className="marquee-right">
+    {marqueeData.map((items, index) => (
             <div key={index} className="inline-flex rounded-md p-2 items-center gap-2 mr-3">
               <div className="w-6 h-6 rounded-md">
                 <img src={items.image} alt="" />
               </div>
               <h4>{items.name}</h4>
             </div>
-          ))}
-        </motion.div>
-        <motion.div
-          className="flex gap-2 flex-shrink-0 "
-          initial={{ x: "-100%" }} animate = {{x : "0%"}} transition={{ repeat: Infinity, duration: 25, ease: "linear",}}>
-          {marqueeData.slice().reverse().map((items, index) => (
+          ))} {/* Original reversed */}
+    {marqueeData.map((items, index) => (
             <div key={index} className="inline-flex rounded-md p-2 items-center gap-2 mr-3">
               <div className="w-6 h-6 rounded-md">
                 <img src={items.image} alt="" />
               </div>
               <h4>{items.name}</h4>
             </div>
-          ))}
-        </motion.div>
-      </div>
+          ))} {/* Duplicate reversed */}
+  </div>
+</div>
+
 
       
       <div>

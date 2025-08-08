@@ -17,6 +17,37 @@ body{
   );
 }
 
+.marquee-right {
+  display: flex;
+  gap: 8px;
+  animation: marquee-right 25s linear infinite;
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.marquee-left {
+  display: flex;
+  gap: 8px;
+  animation: marquee-left 25s linear infinite;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 
 
 
