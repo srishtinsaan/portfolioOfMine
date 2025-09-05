@@ -44,7 +44,7 @@ function Resume() {
       <h2 className="text-lg">B.Tech. , Computer Science & Engg.</h2>
       <h3 className="text-sm text-gray-300 hidden lg:block">July 2023 - Present</h3>
     </div>
-      <h3 className="text-sm text-gray-300 lg:hidden">July 2023 - Present <span> • Current CGPA : 9.1</span> </h3>
+      <h3 className="text-sm text-gray-300 lg:hidden">July 2023 - Present <span> • Current CGPA : 9.3</span> </h3>
     
     </div>
 
