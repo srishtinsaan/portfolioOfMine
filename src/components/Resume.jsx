@@ -51,7 +51,7 @@ function Resume() {
     <div className="flex flex-col sm:flex-row sm:justify-between">
       <h3 className="text-sm text-gray-300">JECRC University<br /> Jaipur, Rajasthan, India</h3>
       <h3 className="text-sm text-gray-300 hidden lg:block">
-        Current CGPA : 9.1
+        Current CGPA : 9.3
       </h3>
     </div>
   </div>
