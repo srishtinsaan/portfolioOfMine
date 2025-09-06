@@ -12,19 +12,33 @@ function Projects() {
 
   const project = [
     {name : "Blood Banks Near Me", image : comingSoon, desc : "A full-stack app to find nearby blood banks by PIN code.", 
-      github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me"},
+      github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
+    tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
+  live : ""},
     {name : "Obys Agency UI Clone", image : obys, desc : "A sleek clone of the modern Obys Agency website UI.",
-      github : "https://github.com/srishtinsaan/Obys_Agency---UI-Clone"},
+      github : "https://github.com/srishtinsaan/Obys_Agency---UI-Clone",
+    tools: ["HTML", "CSS", "Javascript", "GSAP", "Locomotive", "Scrolltrigger"],
+  live : "https://obys-agency-ui-clone.vercel.app/"},
     {name : "YouX", image : youX, desc : "A social platform backend that combines YouTube and X.",
-      github : "https://github.com/srishtinsaan/YouX"},
+      github : "https://github.com/srishtinsaan/YouX",
+    tools: ["MongoDB", "Express","Node.js", "Cloudinary", "Postman", "JWT"],
+  live : ""},
     {name : "Blog Application", image : blog, desc : "A MVP of CRUD blog application using Appwrite.",
-      github : "https://github.com/srishtinsaan/YouX"},
+      github : "https://github.com/srishtinsaan/YouX",
+    tools: ["Appwite", "React", "TinyMCE"],
+  live : ""},
     {name : "To Do Application", image :todo, desc : "A simple task manager to organize daily activities made using Redux.",
-      github : "https://github.com/srishtinsaan/Redux-ToDo"},
+      github : "https://github.com/srishtinsaan/Redux-ToDo",
+    tools: ["React", "Redux", "Tailwind CSS"],
+  live : ""},
     {name : "Wallet Dashboard", image : comingSoon, desc : "A clean dashboard for tracking expenses and transactions.",
-      github : "https://github.com/srishtinsaan/Wallet-dashboard"},
+      github : "https://github.com/srishtinsaan/Wallet-dashboard",
+    tools: ["React", "Shadcn", "Tailwind CSS"],
+  live : ""},
     {name : "Password generator", image : password, desc : "A secure tool to generate strong random passwords instantly.",
-      github : "https://github.com/srishtinsaan/password-generator"}
+      github : "https://github.com/srishtinsaan/password-generator",
+    tools: ["React","Javascript", "Tailwind CSS", ],
+  live : ""}
   ]
   
   return (
@@ -52,24 +66,43 @@ function Projects() {
           </div>
 
           {/* desc */}
-          <div className="w-full min-h-[120px] m-4">
+          <div className="w-full min-h-[50px] mx-4">
             <p className="text-sm mt-4">{proj.desc}</p>
           </div>
+          
+          {/* tools */}
+ <div className=" flex flex-wrap gap-2 mx-4 mt-0"> 
+  {proj.tools.map((tool, i) => ( 
+    <button key={i} 
+    className="px-2 py-1 text-xs rounded-md bg-white/10 border border-white/20 text-white shadow-sm hover:bg-white/20 transition"> 
+    {tool} </button> 
+  ))} 
+  </div>
 
-          {/* buttons */}
-          <div className="m-0 absolute flex bottom-4 right-4 left-4 justify-between">
-            <button className="relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] bg-white/10 backdrop-blur-md border border-white/20 text-white overflow-hidden group">
-              <a href={proj.github} target="_blank" rel="noopener noreferrer">
-                    Github
-              </a>
-              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
-            </button>
+{/* buttons */}
 
-            <button className="relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] bg-white/10 backdrop-blur-md border border-white/20 text-white overflow-hidden group">
-              Live
-              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
-            </button>
-          </div>
+{/* github */}
+<div className="flex justify-between items-center mx-4 mt-4 mb-4">
+  <button className="relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] bg-white/10 backdrop-blur-md border border-white/20 text-white overflow-hidden group">
+    <a href={proj.github} target="_blank" rel="noopener noreferrer">
+      Github
+    </a>
+    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+  </button>
+
+{/* live */}
+  <button
+    className={`relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] 
+    bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden group
+    ${proj.image === obys ? "text-white" : "text-gray-400"}`}
+  >
+    <a href={proj.live} target="_blank" rel="noopener noreferrer">
+      Live
+    </a>
+    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+  </button>
+</div>
+
         </div>
       </div>
     ))}

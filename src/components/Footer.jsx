@@ -16,7 +16,8 @@ function Footer() {
   return (
     <div className='w-full sm:w-auto text-center px-4'>
       <div className='text-sm  text-gray-500 mb-10 mt-20 sm:w-auto sm:text-base'>
-         Jaipur, IND • {today_date} {time}
+        <div>Jaipur, IND</div>
+        <div>{today_date} • {time}</div>  
       </div>
     </div>
   )
