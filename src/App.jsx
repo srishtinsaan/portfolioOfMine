@@ -16,13 +16,13 @@ import PageUpButton from './components/PageUpButton';
 
 const PageWrapper = ({children}) => (
   <motion.div
-    initial={{ opacity: 0, x: 40 }}
-    animate={{ opacity: 1, x: 0 }}
-    exit={{ opacity: 0, x: -40 }}
-    transition={{ duration: 0.2, ease: 'easeInOut' }}
+    initial={{ opacity: 0, y: 0, filter: 'blur(3px)' }}
+    animate={{ opacity: 1, y: 0, filter: 'blur(0px)'  }}
+    // exit={{ opacity: 0, y: 40 }}
+    transition={{ duration: 0.5, ease: 'easeInOut', ease: 'easeInOut' }}
     className="w-full">
     {children}
-  </motion.div>
+  </motion.div> 
 );
 
 const AppRoutes = () => {
