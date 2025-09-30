@@ -4,6 +4,8 @@ import blog from '../assets/images/blog_application.png'
 import todo from '../assets/images/todo.png'
 import password from '../assets/images/password.png'
 import youX from '../assets/images/youX.png'
+import jeevdhan from '../assets/images/jeevdhan.png'
+import bloodbank from '../assets/images/bloodbank.png'
 
 
 
@@ -11,9 +13,13 @@ import youX from '../assets/images/youX.png'
 function Projects() {
 
   const project = [
-    {name : "Blood Banks Near Me", image : comingSoon, desc : "A full-stack app to find nearby blood banks by PIN code.", 
+    {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack app to find nearby blood banks by PIN code.", 
       github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
     tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
+  live : ""},
+  {name : "Jeevdhan", image : jeevdhan, desc : "A full-stack app to find nearby blood banks by PIN code.", 
+      github : "https://github.com/srishtinsaan/jeevdhan",
+    tools: ["React", "Tailwind CSS", "Appwrite"],
   live : ""},
     {name : "Obys Agency UI Clone", image : obys, desc : "A sleek clone of the modern Obys Agency website UI.",
       github : "https://github.com/srishtinsaan/Obys_Agency---UI-Clone",
@@ -94,7 +100,7 @@ function Projects() {
   <button
     className={`relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] 
     bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden group
-    ${proj.image === obys ? "text-white" : "text-gray-400"}`}
+    ${proj.image === obys ||  proj.image === jeevdhan ? "text-white" : "text-gray-400"}`}
   >
     <a href={proj.live} target="_blank" rel="noopener noreferrer">
       Live
