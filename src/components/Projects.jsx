@@ -20,7 +20,7 @@ function Projects() {
   {name : "Jeevdhan", image : jeevdhan, desc : "A full-stack app to find nearby blood banks by PIN code.", 
       github : "https://github.com/srishtinsaan/jeevdhan",
     tools: ["React", "Tailwind CSS", "Appwrite"],
-  live : ""},
+  live : "https://jeevdhan.vercel.app/"},
     {name : "Obys Agency UI Clone", image : obys, desc : "A sleek clone of the modern Obys Agency website UI.",
       github : "https://github.com/srishtinsaan/Obys_Agency---UI-Clone",
     tools: ["HTML", "CSS", "Javascript", "GSAP", "Locomotive", "Scrolltrigger"],
