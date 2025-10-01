@@ -15,7 +15,7 @@ function Projects() {
     {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack web app to find nearby blood banks by PIN code.", 
       github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
     tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
-  live : ""},
+  live : "https://blood-banks-near-me.vercel.app/"},
   {name : "Jeevdhan", image : jeevdhan, desc : "A digital biosecurity platform for pigs and poultry farms to alert about diseases.", 
       github : "https://github.com/srishtinsaan/jeevdhan",
     tools: ["React", "Tailwind CSS", "Appwrite"],
@@ -100,7 +100,7 @@ function Projects() {
   <button
     className={`relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] 
     bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden group
-    ${proj.image === obys ||  proj.image === jeevdhan || proj.image === password || proj.image === blog ? "text-white" : "text-gray-400"}`}
+    ${proj.image === comingSoon ||  proj.image === youX || proj.image === todo  ? "text-gray-400" : "text-white"}`}
   >
     <a href={proj.live} target="_blank" rel="noopener noreferrer">
       Live
