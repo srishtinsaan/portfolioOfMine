@@ -31,7 +31,7 @@ function Projects() {
     {name : "Blog Application", image : blog, desc : "A MVP of CRUD blog application using Appwrite.",
       github : "https://github.com/srishtinsaan/YouX",
     tools: ["Appwite", "React", "TinyMCE"],
-  live : ""},
+  live : "https://blog-application-ten-woad.vercel.app/"},
     {name : "To Do Application", image :todo, desc : "A simple task manager to organize daily activities made using Redux.",
       github : "https://github.com/srishtinsaan/Redux-ToDo",
     tools: ["React", "Redux", "Tailwind CSS"],
@@ -43,7 +43,7 @@ function Projects() {
     {name : "Password generator", image : password, desc : "A secure tool to generate strong random passwords instantly.",
       github : "https://github.com/srishtinsaan/password-generator",
     tools: ["React","Javascript", "Tailwind CSS", ],
-  live : ""}
+  live : "https://password-generator-dun-alpha.vercel.app/"}
   ]
   
   return (
@@ -99,7 +99,7 @@ function Projects() {
   <button
     className={`relative p-1 text-sm rounded-md px-3 shadow-[0px_0px_7px_rgba(255,255,255,0.5)] 
     bg-white/10 backdrop-blur-md border border-white/20 overflow-hidden group
-    ${proj.image === obys ||  proj.image === jeevdhan ? "text-white" : "text-gray-400"}`}
+    ${proj.image === obys ||  proj.image === jeevdhan || proj.image === password || proj.image === blog ? "text-white" : "text-gray-400"}`}
   >
     <a href={proj.live} target="_blank" rel="noopener noreferrer">
       Live
