@@ -9,15 +9,14 @@ import bloodbank from '../assets/images/bloodbank.png'
 
 
 
-
 function Projects() {
 
   const project = [
-    {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack app to find nearby blood banks by PIN code.", 
+    {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack web app to find nearby blood banks by PIN code.", 
       github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
     tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
   live : ""},
-  {name : "Jeevdhan", image : jeevdhan, desc : "A full-stack app to find nearby blood banks by PIN code.", 
+  {name : "Jeevdhan", image : jeevdhan, desc : "A digital biosecurity platform for pigs and poultry farms to alert about diseases.", 
       github : "https://github.com/srishtinsaan/jeevdhan",
     tools: ["React", "Tailwind CSS", "Appwrite"],
   live : "https://jeevdhan.vercel.app/"},
