@@ -82,6 +82,9 @@ function Resume() {
         <div className='text-sm'>
           <ul className='list-disc pl-5'>
             <li>Global Nominee at NASA Space Apps Challenge 2024</li>
+            <li>Finalist at Codehunt - Innov8 2023 (JECRC University)</li>
+            <li>Participated in Smart India Hackathon 2025</li>
+            <li>Participated in Hackathon - Innov8 2024 (JECRC University)</li>
             <li>Author of my unpublished book : <a  target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/13VMtegE0_b3yCNFavodmQTqT3bdRBF7r/view?usp=sharing" className='italic hover:text-blue-400' >14th Moon</a></li>
           </ul>
         </div>

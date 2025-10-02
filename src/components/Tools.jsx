@@ -10,9 +10,7 @@ function Tools() {
     { name: "Redux", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
     { name: "Framer", image: "https://img.icons8.com/?size=100&id=L2hKYZI79drI&format=png&color=000000" },
     { name: "Figma", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-    { name: "Shadcn", image: ""},
-    { name: "GSAP", image: ""},
-    { name: "Locomotive", image: ""},
+    
   ]
 
   const backend_data = [
