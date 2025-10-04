@@ -1,11 +1,11 @@
 import React from 'react'
-import ResumeDownloadButton from './ResumeDownloadButton'
+import ResumeButton from './ResumeButton'
 
 function Resume() {
   return (
      <div className=''>
 
-      <ResumeDownloadButton/>
+      <ResumeButton/>
 
       {/* Experience */}
       <div className='w-full min-h-[80px]'>
