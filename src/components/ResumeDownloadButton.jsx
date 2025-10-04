@@ -1,24 +1,21 @@
 import { useState } from "react";
-import { FaCheck, FaSpinner } from "react-icons/fa"; 
+import { FaCheck, FaSpinner } from "react-icons/fa";
 
 export default function ResumeDownloadButton() {
-  const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'success'
+  const [status, setStatus] = useState("idle");
 
   const handleDownload = () => {
     setStatus("loading");
 
-    const url = "https://drive.google.com/uc?export=download&id=1nrbz-W_57ICu2EuhHDXPVHf9L1yQnYDd";
+    const url =
+      "https://drive.google.com/uc?export=download&id=1nrbz-W_57ICu2EuhHDXPVHf9L1yQnYDd";
 
-    const link = document.createElement("a"); // anchor
-    link.href = url;
-    link.download = "Srishti_Singh_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    // Instead of programmatic download, open link in new tab (works on mobile too)
+    window.open(url, "_blank");
 
     setTimeout(() => {
       setStatus("success");
-      setTimeout(() => setStatus("idle"), 2000); // reset to normal after 2 sec
+      setTimeout(() => setStatus("idle"), 2000);
     }, 1500);
   };
 
@@ -29,7 +26,7 @@ export default function ResumeDownloadButton() {
         disabled={status === "loading"}
         className={`flex items-center gap-2 p-1 px-3 text-sm rounded 
           bg-white/10 border border-white/20 text-white backdrop-blur-md
-          hover:bg-white hover:text-black transition  hover:font-semibold
+          hover:bg-white hover:text-black transition hover:font-semibold
           shadow-[0_0_7px_rgba(255,255,255,0.5)]
           ${status === "loading" ? "opacity-80 cursor-not-allowed" : ""}
         `}
