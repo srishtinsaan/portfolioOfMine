@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaCheck, FaSpinner } from "react-icons/fa6"; 
+import { FaCheck, FaSpinner } from "react-icons/fa"; 
 
 export default function ResumeDownloadButton() {
   const [status, setStatus] = useState("idle"); // 'idle' | 'loading' | 'success'
