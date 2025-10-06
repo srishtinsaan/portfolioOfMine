@@ -1,4 +1,7 @@
-import myImage from '../assets/images/Srish.png'
+import myImage1 from '../assets/images/profile.jpg'
+
+
+
 
 function Profile() {
   
@@ -33,7 +36,8 @@ function Profile() {
         sm:mx-6 sm:mb-5 
         md:mx-6  md:-my-16 
         lg:mx-10 overflow-hidden shadow-[0_5px_10px_rgba(255,255,255,0.4)] ">
-            <img className="w-full bg-black object-cover object-top scale-110 -translate-y-5 translate-x-1" src={myImage} draggable="false"/>
+            <img className="w-full bg-black object-cover object-top scale-140 translate-y-2 -translate-x-5 translate-x-1" src={myImage1} draggable="false"/>
+           
         </div>
 
         {/* heading */}
