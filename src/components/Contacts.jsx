@@ -53,7 +53,7 @@ function Contacts() {
       <div className='w-full min-h-[80px] my-10'>
         <h1 className='text-xl sm:text-2xl lg:text-2xl  font-semibold'>Email</h1>
         <br />
-        <h3>srish17816@gmail.com</h3>
+        <h3>srishtisingh.dev@gmail.com</h3>
       </div>
       <hr />
     
