@@ -12,24 +12,47 @@ function Resume() {
         <h1 className='text-xl sm:text-2xl lg:text-2xl  
         lg:mb-8 md:mb-6 sm:mb-4 mb-3 mb-5 font-semibold'>Experience</h1>
 
-      <div className="w-full min-h-[50px] space-y-1">
-    {/* Role */}
-    <div className='flex flex-col'>
+        {/* 1 */}
+        <div className="w-full min-h-[50px] space-y-1">
+        {/* Role */}
+          <div className='flex flex-col'>
+    <div className="flex place-content-between sm:flex-row sm:justify-between">
+      <h2 className="text-lg">Full-stack Developer</h2>
+      <h3 className="text-sm text-gray-300">Remote</h3>
+    </div>
+      <h3 className="text-sm text-gray-300 lg:hidden">Oct 2025 - present</h3>
+    
+          </div>
+
+            {/* Company*/}
+            <div className="flex flex-col sm:flex-row sm:justify-between">
+      <h3 className="text-sm text-gray-300">Creato Software <br /> Jaipur, Rajasthan, India </h3>
+      <h3 className="text-sm text-gray-300 hidden lg:block">
+        Oct 2025 - present
+      </h3>
+        </div>
+        </div>
+
+
+{/* 2 */}
+      <div className="w-full min-h-[50px] space-y-1 mt-5">
+        {/* Role */}
+          <div className='flex flex-col'>
     <div className="flex place-content-between sm:flex-row sm:justify-between">
       <h2 className="text-lg">Technical Content Writer</h2>
       <h3 className="text-sm text-gray-300">Remote</h3>
     </div>
       <h3 className="text-sm text-gray-300 lg:hidden">Dec 2023 - May 2024 • 6 Months</h3>
     
-    </div>
+          </div>
 
-    {/* Company*/}
-    <div className="flex flex-col sm:flex-row sm:justify-between">
+            {/* Company*/}
+            <div className="flex flex-col sm:flex-row sm:justify-between">
       <h3 className="text-sm text-gray-300">Cloudastra Technologies <br /> Noida, Uttar Pradesh, India </h3>
       <h3 className="text-sm text-gray-300 hidden lg:block">
         Dec 2023 - May 2024 • 6 Months
       </h3>
-    </div>
+        </div>
   </div>
       </div>
       
