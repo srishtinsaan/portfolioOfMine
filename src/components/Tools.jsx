@@ -8,10 +8,10 @@ function Tools() {
     { name: "Tailwind CSS", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"},
     { name: "Redux", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
     { name: "Framer", image: "https://img.icons8.com/?size=100&id=L2hKYZI79drI&format=png&color=000000" },
-    { name: "Figma", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+    { name: "Figma", image: "" },
+
     
   ]
-
   const backend_data = [
     
     { name: "Node.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
@@ -37,8 +37,8 @@ function Tools() {
           <div className="gap-2 lg:gap-4 flex-shrink-0">
             {frontend_data.map((items, index) => (
               <div key={index} className="inline-flex rounded-md p-2 gap-2 lg:mr-2 sm:mr-2 md:mr-2">
-                <div className="w-6 h-6 rounded-md">
-                  <img src={items.image} alt="" />
+                <div className="w-6 h-6 rounded-md"> 
+                  dangerouslySetInnerHTML={{ __html: items.svg }} //svg
                 </div>
                 <h4>{items.name}</h4>
               </div>

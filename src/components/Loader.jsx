@@ -12,7 +12,7 @@ export default function LotteryWelcome() {
     const lockDelay        = 200  // phir har letter 200ms gap se lock
 
     target.forEach((char, idx) => {
-      let elapsed = 0
+      let elapsed = 0  // A per-letter counter (in milliseconds) to track how long this particular letter has been scrambling.
       const stopTime = scrambleDuration + idx * lockDelay
 
       const iv = setInterval(() => {

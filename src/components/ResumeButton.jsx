@@ -1,7 +1,7 @@
 export default function ResumeButton() {
   const handleView = () => {
     const url =
-      "https://drive.google.com/file/d/1p_moCl7MyTZ8fn165_fSkCSRSsgAfsDu/view?usp=sharing";
+      "https://drive.google.com/file/d/1ZhBfmGdhwocxlaNEAyAIrM-NOhAiySh1/view?usp=drivesdk";
     window.open(url, "_blank"); // opens resume in a new tab
   };
 
