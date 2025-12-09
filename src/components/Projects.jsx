@@ -16,10 +16,6 @@ function Projects() {
       github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
     tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
   live : "https://bloodbanksnearme.vercel.app/"},
-  {name : "Jeevdhan", image : jeevdhan, desc : "A digital biosecurity platform for pigs and poultry farms to alert about diseases.", 
-      github : "https://github.com/srishtinsaan/jeevdhan",
-    tools: ["React", "Tailwind CSS", "Appwrite"],
-  live : "https://jeevdhan.vercel.app/"},
   {name : "Blog Application", image : blog, desc : "A MVP of CRUD blog application using Appwrite.",
       github : "https://github.com/srishtinsaan/YouX",
     tools: ["Appwite", "React", "TinyMCE"],
@@ -33,18 +29,12 @@ function Projects() {
     tools: ["MongoDB", "Express","Node.js", "Cloudinary", "Postman", "JWT"],
   live : ""},
     
-    {name : "To Do Application", image :todo, desc : "A simple task manager to organize daily activities made using Redux.",
-      github : "https://github.com/srishtinsaan/Redux-ToDo",
-    tools: ["React", "Redux", "Tailwind CSS"],
-  live : ""},
+    
   //   {name : "Wallet Dashboard", image : comingSoon, desc : "A clean dashboard for tracking expenses and transactions.",
   //     github : "https://github.com/srishtinsaan/Wallet-dashboard",
   //   tools: ["React", "Shadcn", "Tailwind CSS"],
   // live : ""},
-    {name : "Password generator", image : password, desc : "A secure tool to generate strong random passwords instantly.",
-      github : "https://github.com/srishtinsaan/password-generator",
-    tools: ["React","Javascript", "Tailwind CSS", ],
-  live : "https://password-generator-dun-alpha.vercel.app/"}
+   
   ]
   
   return (
