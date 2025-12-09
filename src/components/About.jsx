@@ -19,10 +19,34 @@ function About() {
     { name: "Git", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "GitHub", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
     { name: "Vite.js", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"},
-    { name: "Framer", image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg" },
     { name: "Appwrite", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/appwrite/appwrite-original.svg" },
     {name: "NPM", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg"},
     { name: "Postman", image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+    { 
+  name: "TypeScript", 
+  image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
+},
+{ 
+  name: "Next.js", 
+  image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" 
+}
+,
+{ 
+  name: "Zod", 
+  image: "https://raw.githubusercontent.com/colinhacks/zod/master/logo.svg" 
+},
+{ 
+  name: "Prisma", 
+  image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" 
+}
+,
+{ 
+  name: "PostgreSQL", 
+  image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
+}
+
+
+
   ]
 
   
@@ -30,9 +54,9 @@ function About() {
     <div className="w-full h-full relative">
 
       <div>
-        I'm a Computer Science undergrad and a developer who genuinely enjoys building things and love to solve real problems. 
+        I'm a Computer Science undergrad and a fullstack developer who genuinely enjoys building things and love to solve real problems. 
          <br /><br />
-          I’ve participated in three hackathons, and was honored to be selected as a Global Nominee in one. These experiences shaped my mindset to build fast, iterate smart, and collaborate effectively under pressure.        <br /><br />
+          I’ve participated in 4+ hackathons, and was honored to be selected as a Global Nominee in one. These experiences shaped my mindset to build fast, iterate smart, and collaborate effectively under pressure.        <br /><br />
         
         I’ve worked with several tools and technologies (listed below) and am always open to learning more. 
         <br /><br />
@@ -88,7 +112,7 @@ function About() {
       
       <div>
         <p>
-          Alongside development, I'm actively practicing Data Structures and Algorithms, having solved 250+ problems across platforms like LeetCode and GFG. It helps me think sharper and write more efficient code.
+          Alongside development, I'm actively practicing Data Structures and Algorithms, having solved 300+ problems across platforms like LeetCode and GFG. It helps me think sharper and write more efficient code.
         <a className="ml-2 hover:text-blue-400 text-blue-300" href="https://codolio.com/profile/srishtinsaan" target="_blank" rel="noopener noreferrer">Checkout here.</a>
         <br /><br />
         I bring solid dedication, clean code, and deep focus to the table.
