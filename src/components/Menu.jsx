@@ -44,6 +44,7 @@ function Menu() {
         <NavLink 
             key={index} 
             to={`/${items.toLowerCase()}`}
+            replace
             className={({ isActive }) => 
                 `inline-block mx-2 px-1 py-1 z-10 ${isActive ? "border-b-[0.5px] lg:border-b-1 font-semibold" : "text-gray-100"}`
             }>
