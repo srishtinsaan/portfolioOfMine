@@ -20,7 +20,7 @@ function Resume() {
       <h2 className="text-lg">Full-stack Developer</h2>
       <h3 className="text-sm text-gray-300">Remote</h3>
     </div>
-      <h3 className="text-sm text-gray-300 lg:hidden">Oct 2025 - present</h3>
+      <h3 className="text-sm text-gray-300 lg:hidden">Oct 2025 - Dec 2025</h3>
     
           </div>
 
@@ -28,7 +28,7 @@ function Resume() {
             <div className="flex flex-col sm:flex-row sm:justify-between">
       <h3 className="text-sm text-gray-300">Creato Software <br /> Jaipur, Rajasthan, India </h3>
       <h3 className="text-sm text-gray-300 hidden lg:block">
-        Oct 2025 - present
+        Oct 2025 - Dec 2025
       </h3>
         </div>
         </div>
