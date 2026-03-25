@@ -2,9 +2,8 @@ import comingSoon from '../assets/images/coming_soon.jpg'
 import obys from '../assets/images/obys.png'
 import blog from '../assets/images/blog_application.png'
 import todo from '../assets/images/todo.png'
-import password from '../assets/images/password.png'
 import youX from '../assets/images/youX.png'
-import jeevdhan from '../assets/images/jeevdhan.png'
+import phishing from '../assets/images/phishing.png'
 import bloodbank from '../assets/images/bloodbank.png'
 
 
@@ -12,10 +11,14 @@ import bloodbank from '../assets/images/bloodbank.png'
 function Projects() {
 
   const project = [
-    {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack web app to find nearby blood banks by PIN code.", 
-      github : "https://github.com/srishtinsaan/Blood-Banks-Near-Me",
-    tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS"],
-  live : "https://bloodbanksnearme.vercel.app/"},
+    {name : "Phishing URL Detector", image : phishing, desc : "A URL-based phishing detection system for real-time detection of malicious websites.", 
+      github : "https://github.com/srishtinsaan/phishing_url_detection",
+    tools: ["Python", "scikit-learn", "CatBoost", "Streamlit"]
+    },
+    {name : "Blood Banks Near Me", image : bloodbank, desc : "A full-stack web app for blood bank discovery and management with secure authentication and optimized search.", 
+      github : "https://github.com/srishtinsaan/bloodbanksnearme-frontend",
+    tools: ["MongoDB", "Express", "React", "Node.js", "Framer-motion", "Tailwind CSS", "JWT", "Bcrypt "],
+  live : "https://bloodconnect-web.vercel.app/"},
   {name : "Blog Application", image : blog, desc : "A MVP of CRUD blog application using Appwrite.",
       github : "https://github.com/srishtinsaan/YouX",
     tools: ["Appwite", "React", "TinyMCE"],
@@ -62,9 +65,9 @@ function Projects() {
           </div>
 
           {/* desc */}
-          <div className="w-full min-h-[50px] mx-4">
-            <p className="text-sm mt-4">{proj.desc}</p>
-          </div>
+<div className="w-full h-[80px] mx-4 overflow-hidden">
+  <p className="text-sm mt-4 line-clamp-3">{proj.desc}</p>
+</div>
           
           {/* tools */}
  <div className=" flex flex-wrap gap-2 mx-4 mt-0"> 
