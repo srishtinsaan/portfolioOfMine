@@ -1,4 +1,4 @@
-import myImage1 from '../assets/images/Srish.jpeg'
+import myImage1 from '../assets/images/srish.jpeg'
 
 
 
